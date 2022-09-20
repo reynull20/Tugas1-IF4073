@@ -6,6 +6,6 @@ function out = mapHistogram(image, map)
       out(:,:,i) = m(image(:,:,i) + 1);
     end
   else
-    out = map'(image + 1);
+    out = map(image + 1);
   end
 end

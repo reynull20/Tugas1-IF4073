@@ -8,9 +8,9 @@ function out = specifyHistogram (h, g)
   elseif (size(h_s, 1) > size(g_s, 1))
     g_s = repmat(g_s, size(h_s, 1), 1);
   end
-  out = zeros(size(h_s));
-  for i = 1:size(h_s,1)
-    out(i,:) = lookup(g_s(i,:), h_s(i,:), 'r');
-  end
+  g_s = permute(g_s, [1,3,2]);
+  sz = size(h_s,2);
+  out = sz - sum(h_s < g_s, 3);
+  out(out > sz) = sz;
   out = cast(out, 'uint8');
 end

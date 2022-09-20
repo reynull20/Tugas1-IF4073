@@ -1,5 +1,5 @@
 function out = contrastStretch (h)
-  if (size(h, 1) != 1)
+  if (size(h, 1) ~= 1)
     out = zeros(size(h), "uint8");
     for i = 1:size(h,1)
       out(i,:) = contrastStretch(h(i,:));

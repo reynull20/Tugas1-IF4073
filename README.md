@@ -1,2 +1,4 @@
 # Tugas1-IF4073
-Repositori Untuk Tugas 1 IF4073 Interpretasi dan Pengolahan Citra
+Anggota Kelompok : 
+  - 13519072 Hanif Arroisi Mukhlis
+  - 13519045 M. Reyhanullah Budiaman

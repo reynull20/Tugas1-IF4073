@@ -13,7 +13,7 @@ function out = contrastStretch (h)
     rmin = min(ix);
     rmax = max(ix);
     a = 255 / (rmax - rmin);
-    b = rmin * a;
+    b = -rmin * a;
     out = linearMap(a, b);
   end
 end
